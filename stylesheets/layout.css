@@ -6,17 +6,10 @@ body {
 article a {
   color: inherit;
 }
-article h1,
-article h2,
-article h3,
-article h4,
-article p,
-article ul,
-article ol,
-article blockquote {
-  width: 700px;
+article * {
   margin: 0 auto;
 }
+
 article h1,
 article h2,
 article h3,
