@@ -126,7 +126,7 @@ article p:last-child {
 }
 article ul {
   list-style-type: disc;
-  padding-left: 32px;
+  padding-left: 45px;
 }
 article ol {
   list-style-type: decimal;
@@ -141,23 +141,22 @@ article div {
   column-gap: 60px;
   row-gap: 10px;
 }
-div span {
+article div span {
   font-size: 25px;
   width: auto;
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   margin: 0;
 }
-ul ~ h1 {
-  text-align: center;
-  margin: 80px auto;
-}
-h1 > img {
-  width: 30px;
-  display: inline;
-  margin: -5px 10px;
+article h2 ~ ul {
+  margin: 29px auto;
 }
 .a2a_kit {
   margin-bottom: 40px;
   margin-top: 80px;
+}
+
+article ul > p {
+  margin-left: -20px;
+  margin-top: 10px;
 }
