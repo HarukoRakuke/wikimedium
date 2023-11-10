@@ -6,7 +6,12 @@ body {
 article a {
   color: inherit;
 }
+article {
+  width: 1440px;
+  margin: 0 auto;
+}
 article * {
+  width: 700px;
   margin: 0 auto;
 }
 

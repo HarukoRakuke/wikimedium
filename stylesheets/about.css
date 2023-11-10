@@ -1,3 +1,7 @@
+section {
+  width: 1440px;
+  margin: 0 auto;
+}
 section > div {
   width: 50%;
   /* background: blue; */
