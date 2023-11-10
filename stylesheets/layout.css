@@ -13,8 +13,9 @@ article * {
 article h1,
 article h2,
 article h3,
-article h4 {
-  font-family: 'PT Sans Caption', sans-serif;
+article h4,
+article h5 {
+  font-family: 'PT Sans', sans-serif;
   font-weight: bold;
 }
 article h1 {
@@ -62,6 +63,12 @@ article h4 + article p,
 article h4 + article blockquote {
   margin-top: 5px;
 }
+article h5 {
+  margin-bottom: 40px;
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: normal;
+}
 article p,
 article blockquote,
 article li {
@@ -73,7 +80,7 @@ article blockquote {
   font-style: italic;
   position: relative;
 }
-article blockquote::before {
+article .right_quote::before {
   content: '';
   width: 3px;
   height: 100%;
@@ -82,6 +89,19 @@ article blockquote::before {
   top: 0;
   left: -17px;
 }
+article .left_quote {
+  text-align: right;
+}
+article .left_quote::after {
+  content: '';
+  width: 3px;
+  height: 100%;
+  background: black;
+  position: absolute;
+  top: 0;
+  right: -17px;
+}
+
 article img {
   display: block;
   width: 1020px;
@@ -112,4 +132,32 @@ article ol {
   list-style-type: decimal;
   padding-left: 32px;
   color: black;
+}
+article div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 60px;
+  row-gap: 10px;
+}
+div span {
+  font-size: 25px;
+  width: auto;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+ul ~ h1 {
+  text-align: center;
+  margin: 80px auto;
+}
+h1 > img {
+  width: 30px;
+  display: inline;
+  margin: -5px 10px;
+}
+.a2a_kit {
+  margin-bottom: 40px;
+  margin-top: 80px;
 }
