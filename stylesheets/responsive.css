@@ -42,12 +42,12 @@
     column-gap: calc((100% - 265px) / 2);
   }
 }
-@media all and (max-device-width: 353px) {
+@media all and (max-device-width: 390px) {
   article div span {
     width: 100%;
     text-align: center;
     font-size: 20px;
-    line-height: 18px;
+    line-height: 15px;
   }
 }
 @media all and (max-device-width: 768px) and (orientation: portrait) {
