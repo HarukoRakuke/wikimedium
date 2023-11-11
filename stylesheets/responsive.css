@@ -9,11 +9,6 @@
   section {
     overflow: visible;
   }
-  section h1,
-  section p {
-    width: calc(100% - 40px);
-    margin-left: 0;
-  }
 }
 
 @media all and (max-width: 1440px) {
@@ -29,6 +24,11 @@
   li {
     width: 100%;
   }
+  section h1,
+  section p {
+    width: calc(100% - 40px);
+    margin-left: 0;
+  }
 }
 
 @media all and (max-device-width: 768px) and (orientation: portrait) {
@@ -38,12 +38,14 @@
   article > * {
     width: calc(100% - 40px);
   }
+  article div span {
+    font-size: 30px;
+  }
   ul > p {
     width: 100%;
   }
   section h1,
   section p {
-    width: calc(100% - 40px);
     margin: 20px auto;
   }
   section {
